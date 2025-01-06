@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.StudentReturnBook">
+    <children>
+        <TableView fx:id="borrowingHistoryTable" layoutX="453.0" layoutY="307.0" prefHeight="100.0" prefWidth="831.0">
+            <columns>
+                <TableColumn fx:id="bookIdColumn" prefWidth="95.20001220703125" text="BOOK ID " />
+                <TableColumn fx:id="titleColumn" minWidth="0.0" prefWidth="232.79998779296875" text="TITLE " />
+                <TableColumn fx:id="dateBorrowedColumn" prefWidth="204.0" text="DATE OF BORROWED" />
+            <TableColumn fx:id="dueDateColumn" prefWidth="158.400146484375" text="DUE DATE " />
+            <TableColumn fx:id="statusColumn" prefWidth="138.39995117187505" text="STATUS" />
+            </columns>
+        </TableView>
+        <Pane layoutX="453.0" layoutY="525.0" prefHeight="298.0" prefWidth="831.0" style="-fx-background-color: #c9c9c9;">
+            <children>
+                <TextField fx:id="bookIdField" layoutX="174.0" layoutY="35.0" prefHeight="36.0" prefWidth="594.0" />
+                <Text layoutX="31.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return day : " wrappingWidth="164.1624755859375">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Text>
+                <Text layoutX="31.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Book ID : " wrappingWidth="164.1624755859375">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Text>
+                <DatePicker fx:id="returnDatePicker" layoutX="174.0" layoutY="100.0" prefHeight="36.0" prefWidth="594.0" />
+                <Text fill="#d41616" layoutX="13.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remember that the date for returning the book is 14 days after the date of borrowing, delays in returning the book will result in a fine of IDR 500/day. Notification of returning will be provided via email" wrappingWidth="804.9623413085938">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Button layoutX="704.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleOkButton" prefHeight="33.0" prefWidth="64.0" text="OK" />
+            </children>
+        </Pane>
+      <Text layoutX="453.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrower data : " textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <TableView fx:id="studentInfoTable" layoutX="453.0" layoutY="152.0" prefHeight="100.0" prefWidth="831.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="160.0" text="NAME " />
+            <TableColumn fx:id="nimColumn" minWidth="0.0" prefWidth="129.5999755859375" text="NIM " />
+            <TableColumn fx:id="picColumn" prefWidth="105.60003662109375" text="PIC" />
+            <TableColumn fx:id="facultyColumn" prefWidth="104.0" text="FACULTY " />
+            <TableColumn fx:id="majorColumn" prefWidth="164.0" text="MAJOR" />
+            <TableColumn fx:id="emailColumn" prefWidth="169.5999755859375" text="EMAIL " />
+         </columns>
+      </TableView>
+      <Text layoutX="453.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data on books borrowed : " textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="453.0" layoutY="453.0" prefHeight="71.0" prefWidth="831.0" style="-fx-background-color: #831d1d;">
+         <children>
+            <Text fill="WHITE" layoutX="324.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RETURN BOOK ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Pane layoutY="71.0" prefHeight="934.0" prefWidth="285.0" style="-fx-background-color: #676767;">
+         <children>
+            <Pane prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text layoutX="71.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homepage" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="23.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=53429&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="90.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="24.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=2sWrwEXiaegS&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text onMouseClicked="#handleSearchBook" layoutX="69.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="270.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #C9C9C9;">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="27.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=9435&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="75.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="360.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="29.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=58760&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text onMouseClicked="#handleHistoryActivitiesStudent" layoutX="78.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History activities">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="450.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="30.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=41414&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text onMouseClicked="#handleExtendBookStudent" layoutX="78.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Extend book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="540.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=enP6M_u0BXV3&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="76.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="630.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="36.0" layoutX="32.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=8119&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="77.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutY="180.0" prefHeight="90.0" prefWidth="286.0" style="-fx-background-color: #676767;">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="27.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=9485&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                  <Text onMouseClicked="#handleBorrowBook" layoutX="74.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrow book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="71.0" prefWidth="1407.0" style="-fx-background-color: #831d1d;">
+         <children>
+            <Text fill="WHITE" layoutX="65.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, Student ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=7819&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

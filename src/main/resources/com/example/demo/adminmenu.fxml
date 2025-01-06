@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/22"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminstudent.AdminMenuController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="90.0" prefWidth="1407.0" style="-fx-background-color: #7F2D2D;">
+         <children>
+            <Label alignment="CENTER" layoutX="559.0" layoutY="27.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="Admin Menu">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="90.0" prefHeight="713.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+         <children>
+            <Pane layoutX="-5.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #c9c9c9;">
+               <children>
+                  <Label layoutX="82.0" layoutY="32.0" text="Homepage">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="24.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=53429&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <GridPane layoutX="440.0" layoutY="164.0" prefHeight="246.0" prefWidth="800.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.20001220703125" minWidth="10.0" prefWidth="346.20001220703125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.199951171875" minWidth="10.0" prefWidth="106.39999999999998" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="348.60003662109375" minWidth="10.0" prefWidth="347.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="pane1" prefHeight="546.0" prefWidth="346.0" style="-fx-background-color: #7F2D2D;">
+               <children>
+                  <Pane layoutX="29.0" layoutY="30.0" prefHeight="45.0" prefWidth="289.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label fx:id="manageStudentText" layoutX="71.0" layoutY="8.0" onMouseClicked="#handleManageStudentClick" text="Manage Student">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="98.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7F2D2D;" GridPane.columnIndex="2">
+               <children>
+                  <Pane layoutX="29.0" layoutY="32.0" prefHeight="45.0" prefWidth="289.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label fx:id="manageBookText" layoutX="80.0" layoutY="8.0" onMouseClicked="#handleManageBookClick" text="Manage Book">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="103.0" layoutY="89.0">
+                  </ImageView>
+               </children>
+            </Pane>
+            <GridPane prefHeight="30.0" prefWidth="800.0" GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="441.6" minWidth="10.0" prefWidth="347.6000122070312" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.6000122070312" minWidth="10.0" prefWidth="107.59998779296876" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.79986572265625" minWidth="10.0" prefWidth="347.7999633789062" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <Pane fx:id="pane11" layoutX="674.0" layoutY="487.0" prefHeight="271.0" prefWidth="346.0" style="-fx-background-color: #7F2D2D;">
+         <children>
+            <Pane layoutX="29.0" layoutY="30.0" prefHeight="45.0" prefWidth="289.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Label fx:id="manageStudentText1" layoutX="63.0" layoutY="8.0" onMouseClicked="#handleManageStudentClick" text="History and Fines">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="102.0" layoutY="97.0">
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="674.0" layoutY="441.0" prefHeight="46.0" prefWidth="346.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="71.0" layoutY="8.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endX="290.79998779296875" layoutX="541.0" layoutY="164.0" startX="-100.0" />
+      <Line endX="297.29998779296875" endY="-143.60000610351562" layoutX="535.0" layoutY="554.0" startX="297.29998779296875" startY="-390.5" />
+      <Line endX="100.0" layoutX="731.0" layoutY="411.0" startX="-291.0" startY="-0.600006103515625" />
+      <Line endX="-1.0" endY="-99.60000610351562" layoutX="441.0" layoutY="510.0" startX="-0.5" startY="-346.5" />
+      <Line endX="292.0" endY="1.0" layoutX="948.0" layoutY="163.0" startX="-103.9071044921875" startY="0.29290771484375" />
+      <Line endX="292.0" endY="-1.600006103515625" layoutX="948.0" layoutY="412.0" startX="-103.20001220703125" startY="-1.600006103515625" />
+      <Line endX="-339.20001220703125" endY="-45.600006103515625" layoutX="1184.0" layoutY="456.0" startX="-339.20001220703125" startY="-292.0" />
+      <Line endX="0.7071533203125" endY="-335.29290771484375" layoutX="1240.0" layoutY="500.0" startX="0.5" startY="-89.10000610351562" />
+      <Line endX="245.4000244140625" endY="-3.0517578125E-5" layoutX="775.0" layoutY="441.0" startX="-100.0" />
+      <Line endX="-101.60003662109375" endY="260.20001220703125" layoutX="1122.0" layoutY="498.0" startX="-100.89288330078125" startY="-56.29290771484375" />
+      <Line endX="100.0" layoutX="919.0" layoutY="759.0" startX="-245.0" startY="-0.79998779296875" />
+      <Line endX="101.29290771484375" endY="-91.29290771484375" layoutX="573.0" layoutY="533.0" startX="101.0" startY="225.20001220703125" />
+   </children>
+</AnchorPane>

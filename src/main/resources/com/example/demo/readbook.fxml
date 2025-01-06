@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminbook.AdminDisplayBook">
+    <children>
+        <Pane layoutX="-2.0" prefHeight="90.0" prefWidth="1407.0" style="-fx-background-color: #7F2D2D;">
+            <children>
+                <Label alignment="CENTER" layoutX="559.0" layoutY="27.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="DISPLAY BOOK">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutY="90.0" prefHeight="713.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+            <children>
+                <Pane layoutX="-5.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #676767;">
+                    <children>
+                        <Text layoutX="87.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homepage">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="24.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                    <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=53429&amp;format=png&amp;color=000000" />
+                    </image>
+                </ImageView>
+                <Pane layoutX="-5.0" layoutY="96.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #676767;">
+                    <children>
+                        <Text onMouseClicked="#handleAddBookClick" layoutX="89.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Book">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="28.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                            <image>
+                                <Image url="https://img.icons8.com/?size=100&amp;id=m5rSOCdX1rXE&amp;format=png&amp;color=000000" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Pane layoutX="-5.0" layoutY="180.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #c9c9c9;">
+                    <children>
+                        <Text layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Book">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="27.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=37968&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </Pane>
+                <Pane layoutX="-5.0" layoutY="267.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #676767;">
+                    <children>
+                        <Text onMouseClicked="#handleEditBookClick" layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Book">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                            <image>
+                                <Image url="https://img.icons8.com/?size=100&amp;id=8192&amp;format=png&amp;color=000000" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Pane layoutX="-6.0" layoutY="357.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #676767;">
+                    <children>
+                        <Text onMouseClicked="#handleDeleteBookClick" layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Book">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                            <image>
+                                <Image url="https://img.icons8.com/?size=100&amp;id=99961&amp;format=png&amp;color=000000" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            <Pane layoutY="447.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text onMouseClicked="#handleGoToAdminMenu" layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to admin menu">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=8113&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="537.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text onMouseClicked="#handleLogOut" layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=8119&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            </children>
+        </Pane>
+        <TableView fx:id="tableView" layoutX="320.0" layoutY="124.0" prefHeight="630.0" prefWidth="1017.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="113.5999755859375" text="ID" />
+                <TableColumn fx:id="titleColumn" minWidth="0.0" prefWidth="284.7999572753906" text="TITLE" />
+                <TableColumn fx:id="authorColumn" prefWidth="194.39996337890625" text="AUTHOR" />
+                <TableColumn fx:id="genreColumn" prefWidth="158.4000244140625" text="GENRE" />
+                <TableColumn fx:id="stockColumn" prefWidth="95.199951171875" text="STOCK" />
+            <TableColumn fx:id="imageColumn" prefWidth="173.5999755859375" text="COVER" />
+            </columns>
+        </TableView>
+        <ScrollBar layoutX="1334.0" layoutY="148.0" orientation="VERTICAL" prefHeight="606.0" prefWidth="14.0" />
+    </children>
+</AnchorPane>

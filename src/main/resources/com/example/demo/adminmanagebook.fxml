@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminbook.AdminBookController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="90.0" prefWidth="1407.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="559.0" layoutY="27.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="MANAGE BOOK">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="90.0" prefHeight="713.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+         <children>
+            <Pane layoutX="-5.0" prefHeight="90.0" prefWidth="285.0" style="-fx-background-color: #c9c9c9;">
+               <children>
+                  <Text layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homepage">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="24.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=53429&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-5.0" layoutY="96.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text layoutX="89.0" layoutY="52.0" onMouseClicked="#handleAddBookClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=m5rSOCdX1rXE&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-5.0" layoutY="180.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text layoutX="85.0" layoutY="52.0" onMouseClicked="#handleDisplayBookClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=37968&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-5.0" layoutY="267.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text layoutX="85.0" layoutY="52.0" onMouseClicked="#handleEditBookClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=8192&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-3.0" layoutY="357.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text layoutX="85.0" layoutY="52.0" onMouseClicked="#handleDeleteBookClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Book">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=99961&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-5.0" layoutY="447.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text onMouseClicked="#handleGoToAdminMenu" layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to admin menu">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=8113&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="537.0" prefHeight="90.0" prefWidth="279.0" style="-fx-background-color: #676767;">
+               <children>
+                  <Text onMouseClicked="#handleLogOutClick" layoutX="85.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="31.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: #5e5e5e;">
+                     <image>
+                        <Image url="https://img.icons8.com/?size=100&amp;id=8119&amp;format=png&amp;color=000000" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="129.0" prefHeight="212.0" prefWidth="433.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Pane prefHeight="59.0" prefWidth="434.0" style="-fx-background-color: #05313d;">
+               <children>
+                  <Label alignment="CENTER" layoutX="73.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="TOTAL BOOK" textFill="#811111">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="134.0" fitWidth="134.0" layoutX="31.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="totalBookText" layoutX="222.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="80.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="431.0" prefHeight="134.0" prefWidth="256.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="nonfiction" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="372.0" prefHeight="59.0" prefWidth="256.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-16.0" layoutY="12.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="NON-FICTION">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="431.0" prefHeight="134.0" prefWidth="256.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="languangeCulture" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="372.0" prefHeight="59.0" prefWidth="256.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-16.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="SOCIAL SCIENCE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="799.0" layoutY="146.0" prefHeight="59.0" prefWidth="279.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-5.0" layoutY="12.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="FICTION ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="799.0" layoutY="206.0" prefHeight="134.0" prefWidth="279.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="Fiction" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="1094.0" layoutY="206.0" prefHeight="134.0" prefWidth="279.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="socialscience" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="1094.0" layoutY="146.0" prefHeight="59.0" prefWidth="279.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-5.0" layoutY="12.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="LANGUANGE AND CULTURE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="891.0" layoutY="431.0" prefHeight="134.0" prefWidth="242.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="science" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="891.0" layoutY="372.0" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-23.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="SCIENCE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1148.0" layoutY="431.0" prefHeight="134.0" prefWidth="242.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="technology" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="1148.0" layoutY="372.0" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-23.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="TECHNOLOGY">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="646.0" prefHeight="134.0" prefWidth="256.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="health" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="586.0" prefHeight="59.0" prefWidth="256.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-23.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="HEALTH AND MEDICINE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="608.0" layoutY="646.0" prefHeight="134.0" prefWidth="256.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="business" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="608.0" layoutY="586.0" prefHeight="59.0" prefWidth="256.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-16.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="BUSINESS AND MANAGEMENT">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="884.0" layoutY="646.0" prefHeight="134.0" prefWidth="242.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="philosophy" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="884.0" layoutY="586.0" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-23.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="PHILOSOPHY AND RELIGION">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="1140.0" layoutY="646.0" prefHeight="134.0" prefWidth="242.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="126.0" layoutX="19.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://img.icons8.com/?size=100&amp;id=23663&amp;format=png&amp;color=000000" />
+               </image>
+            </ImageView>
+            <Text fx:id="art" layoutX="168.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="1140.0" layoutY="586.0" prefHeight="59.0" prefWidth="242.0" style="-fx-background-color: #731818;">
+         <children>
+            <Label alignment="CENTER" layoutX="-23.0" layoutY="7.0" prefHeight="36.0" prefWidth="289.0" style="-fx-text-fill: #FFFFFF;" text="ART">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

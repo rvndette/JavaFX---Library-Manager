@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Light?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #7b6a6a;"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CreateAccount">
+    <ImageView blendMode="DARKEN" fitHeight="800.0" fitWidth="1400.0" pickOnBounds="true" preserveRatio="true">
+        <effect>
+            <Lighting bumpInput="$null">
+                <light>
+                    <Light.Distant>
+                        <color>
+                            <Color red="0.4842105209827423" green="0.41426900029182434" blue="0.41426900029182434" />
+                        </color>
+                    </Light.Distant>
+                </light>
+            </Lighting>
+        </effect>
+        <image>
+            <Image url="https://th.bing.com/th/id/R.aa70a6a455db344faa93e40a60322981?rik=IP%2bc9PKWMEYUXg&amp;riu=http%3a%2f%2frisetcdn.jatimtimes.com%2fimages%2f2019%2f02%2f11%2fe568353b-4a6b-48aa-8f00-20246fd8f1eab0b49faa8aa9e423.jpg&amp;ehk=XXR5WYomEGevTqntKTBVEXbtiSJ0jKbTwQ%2bmMp0V2pk%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" />
+        </image>
+    </ImageView>
+    <Text fill="WHITE" layoutX="441.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE ACCOUNT PAGE">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="41.0" />
+        </font>
+    </Text>
+    <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="14.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="https://upload.wikimedia.org/wikipedia/id/thumb/3/31/UMM_LOGO.svg/1200px-UMM_LOGO.svg.png" />
+        </image>
+    </ImageView>
+    <Text fill="WHITE" layoutX="358.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perpustakaan UMM Jl. Raya Tlogomas No 246 Malang Jawa Timur Indonesia | infopus@umm.ac.id | +62 821 4377 7735">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="487.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you read the library regulations?">
+      <font>
+         <Font size="15.0" />
+      </font></Text>
+    <CheckBox layoutX="490.0" layoutY="455.0" mnemonicParsing="false" text="Yes" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font></CheckBox>
+    <Hyperlink fx:id="regulationsLink" layoutX="764.0" layoutY="491.0" onAction="#handleHyperlinkRegulations" text="read the library regulations here">
+      <font>
+         <Font size="15.0" />
+      </font></Hyperlink>
+    <Button layoutX="903.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleAddAccount" prefWidth="60.0" style="-fx-background-color: #c9c9c9;" text="OK">
+      <font>
+         <Font size="13.0" />
+      </font></Button>
+   <Text fill="WHITE" layoutX="488.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name : ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="489.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Date : ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="505.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="495.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="317.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create account is just for visitors, if you are student at University of Muhammadiyah Malang, you don't need to create an account">
+      <font>
+         <Font size="14.0" />
+      </font></Text>
+   <Text fill="WHITE" layoutX="495.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username : ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+    <TextField fx:id="fullNameField" layoutX="613.0" layoutY="241.0" prefHeight="30.0" prefWidth="350.0" />
+    <DatePicker fx:id="birthdateField" layoutX="613.0" layoutY="282.0" prefHeight="30.0" prefWidth="350.0" />
+    <TextField fx:id="usernameField" layoutX="613.0" layoutY="324.0" prefHeight="30.0" prefWidth="350.0" />
+    <TextField fx:id="emailField" layoutX="613.0" layoutY="363.0" prefHeight="30.0" prefWidth="350.0" />
+    <PasswordField fx:id="passwordField" layoutX="613.0" layoutY="403.0" prefHeight="30.0" prefWidth="350.0" />
+</AnchorPane>
