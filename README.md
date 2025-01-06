@@ -25,20 +25,11 @@ Pastikan Anda telah menginstal:
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/username/library-manager-java.git
+   git clone https://github.com/rvndette/JavaFX---Library-Manager.git
    cd library-manager-java
 
 ## Mengkonfigurasi Koneksi MySQL
 Pastikan Anda mengonfigurasi koneksi ke database di aplikasi. Edit file konfigurasi Database.java untuk menyesuaikan informasi koneksi MySQL.
-
-## Kompilasi dan Jalankan Aplikasi
-Membangun dan menjalankan aplikasi: Jika Anda menggunakan Maven, jalankan:
-
-bash
-Copy code
-mvn clean install
-mvn javafx:run
-Menggunakan IDE: Anda dapat langsung menjalankan aplikasi dari IDE yang Anda gunakan setelah memastikan dependensi sudah diinstal.
 
 ## Antarmuka Pengguna
 Aplikasi ini menggunakan Scene Builder untuk merancang antarmuka pengguna. Anda dapat membuka file FXML di Scene Builder untuk memodifikasi tampilan sesuai kebutuhan.
